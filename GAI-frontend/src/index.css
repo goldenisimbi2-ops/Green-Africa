@@ -1,0 +1,102 @@
+:root {
+  --dark-forest: #14532D;
+  --primary-green: #166534;
+  --bright-green: #65B82E;
+  --light-green: #F3F8EF;
+  --white: #FFFFFF;
+  --dark-text: #17351F;
+  --gray-text: #4B5563;
+  --border: #D6E1D2;
+  --shadow: 0 4px 20px rgba(20, 83, 45, 0.08);
+  --radius: 16px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--dark-text);
+  background: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+button { font-family: inherit; cursor: pointer; border: none; }
+
+.container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+section { padding: 60px 0; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.btn-primary {
+  background: var(--bright-green);
+  color: var(--white);
+}
+.btn-primary:hover {
+  background: var(--primary-green);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+.btn-outline:hover {
+  background: var(--white);
+  color: var(--primary-green);
+}
+.btn-dark {
+  background: var(--primary-green);
+  color: var(--white);
+}
+.btn-dark:hover {
+  background: var(--dark-forest);
+}
+
+.section-title { text-align: center; margin-bottom: 40px; }
+.section-title h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  color: var(--dark-forest);
+  font-weight: 800;
+}
+.section-title .underline {
+  width: 70px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--bright-green);
+  margin: 16px auto 0;
+}
+.section-title p {
+  color: var(--gray-text);
+  max-width: 640px;
+  margin: 18px auto 0;
+}
+
+.reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  section { padding: 40px 0; }
+}

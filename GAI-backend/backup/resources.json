@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "6af574f57010aab9bfa10094",
+    "title": "Annual Report (Placeholder)",
+    "__v": 0,
+    "category": "Reports",
+    "created_at": "2026-11-12T08:12:37.563Z",
+    "description": "Overview of organizational activities and progress.",
+    "file_url": null,
+    "published": false
+  },
+  {
+    "_id": "6af574f57010aab9bfa10096",
+    "title": "Landscape Restoration Study (Placeholder)",
+    "__v": 0,
+    "category": "Research",
+    "created_at": "2026-11-12T08:12:37.568Z",
+    "description": "Research publication on restoration approaches in the region.",
+    "file_url": null,
+    "published": false
+  },
+  {
+    "_id": "6af574f57010aab9bfa10098",
+    "title": "Community Tree Planting Guide (Placeholder)",
+    "__v": 0,
+    "category": "Guides",
+    "created_at": "2026-11-12T08:12:37.572Z",
+    "description": "Practical step-by-step guide for community planting.",
+    "file_url": null,
+    "published": false
+  },
+  {
+    "_id": "6af574f57010aab9bfa1009a",
+    "title": "Environmental Education Pack (Placeholder)",
+    "__v": 0,
+    "category": "Publications",
+    "created_at": "2026-11-12T08:12:37.575Z",
+    "description": "Educational materials for schools and youth groups.",
+    "file_url": null,
+    "published": false
+  },
+  {
+    "_id": "6af574f57010aab9bfa1009c",
+    "title": "Climate Resilience Toolkit (Placeholder)",
+    "__v": 0,
+    "category": "Downloads",
+    "created_at": "2026-11-12T08:12:37.579Z",
+    "description": "Tools for assessing and strengthening climate resilience.",
+    "file_url": null,
+    "published": false
+  },
+  {
+    "_id": "6af574f57010aab9bfa1009e",
+    "title": "Conservation Brief Series (Placeholder)",
+    "__v": 0,
+    "category": "Reports",
+    "created_at": "2026-11-12T08:12:37.582Z",
+    "description": "Short briefs on community conservation topics.",
+    "file_url": null,
+    "published": false
+  }
+]

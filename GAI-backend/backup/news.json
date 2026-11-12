@@ -1,0 +1,158 @@
+[
+  {
+    "_id": "6af574f57010aab9bfa10086",
+    "slug": "baka-communities-research-report",
+    "__v": 0,
+    "alt_text": "Researchers conducting scientific study with Baka communities",
+    "author": "GAI Research Team",
+    "body": [
+      "The Baka Communities Scientific Research Report presents findings from an in-depth study of Baka communities and their relationship with the surrounding forest ecosystems. This research documents traditional ecological knowledge that has been passed down through generations and remains essential to understanding biodiversity in the region.",
+      "Key findings reveal that Baka communities possess sophisticated knowledge of forest flora and fauna, including medicinal plants, seasonal patterns, and sustainable harvesting techniques. This knowledge, developed over centuries of close interaction with the forest, offers valuable insights for modern conservation strategies.",
+      "The report highlights the challenges facing Baka communities, including land rights issues, limited access to education and healthcare, and the impacts of deforestation and climate change on their traditional livelihoods. It emphasizes the importance of including indigenous voices in environmental policy decisions.",
+      "Recommendations include strengthening community-based conservation programs, supporting land tenure recognition, integrating indigenous knowledge into formal environmental education, and creating partnerships that respect Baka autonomy while providing resources for sustainable development.",
+      "This report is available for all stakeholders, researchers, policymakers and community members to read and use as a foundation for collaborative environmental action that respects and incorporates indigenous perspectives."
+    ],
+    "category": "Research",
+    "created_at": "2026-11-12T08:12:37.528Z",
+    "date_label": "August 27, 2026",
+    "excerpt": "A comprehensive scientific research report examining the environmental knowledge, practices and challenges of Baka communities, highlighting their vital role in forest conservation and sustainable resource management.",
+    "image_url": "research.jpeg",
+    "pdf_url": "/Baka_Communities_Scientific_Research_Report.pdf",
+    "published": true,
+    "published_at": null,
+    "title": "Baka Communities Scientific Research Report",
+    "updated_at": "2026-11-12T08:12:37.528Z"
+  },
+  {
+    "_id": "6af574f57010aab9bfa10088",
+    "slug": "tree-planting-day",
+    "__v": 0,
+    "alt_text": "Volunteers planting tree seedlings together",
+    "author": "GAI Communications Team",
+    "body": [
+      "On a bright morning, community members gathered on a once-degraded hillside to take part in a collective tree planting day. The event brought together households, youth groups and local leaders around one shared goal: bringing life back to the land.",
+      "Seedlings raised in community nurseries were planted along contours that help slow rainwater and hold the soil in place. Each participant learned not only how to plant, but how to care for young trees through their first vulnerable seasons.",
+      "Beyond the trees themselves, the day strengthened a sense of shared responsibility. When communities lead restoration with their own hands, the results last far longer than any single planting season.",
+      "This is sample article content. Replace it with real stories from GAI field activities when available."
+    ],
+    "category": "Community",
+    "created_at": "2026-11-12T08:12:37.535Z",
+    "date_label": "Placeholder Date",
+    "excerpt": "Local volunteers joined hands to plant native seedlings across degraded hillsides, taking a tangible step toward restoring their landscape.",
+    "image_url": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1000&q=80",
+    "published": true,
+    "published_at": null,
+    "title": "Communities Come Together for Tree Planting Day",
+    "updated_at": "2026-11-12T08:12:37.535Z"
+  },
+  {
+    "_id": "6af574f57010aab9bfa1008a",
+    "slug": "restoring-rwandas-landscapes",
+    "__v": 0,
+    "alt_text": "Green terraced hills of rural Rwanda",
+    "author": "GAI Communications Team",
+    "body": [
+      "Rwanda's hills are both beautiful and fragile. When vegetation cover is lost, rain washes soil away quickly, taking fertility and opportunity with it. Restoring these landscapes therefore means working with farmers, not just on the land.",
+      "By combining agroforestry trees with food crops, controlling runoff with simple structures, and protecting remaining natural vegetation, degraded slopes can slowly regain their health — and their productivity.",
+      "The most important ingredient is patience and partnership. Landscape restoration happens season by season, household by household, until whole hillsides begin to recover.",
+      "This is sample article content. Replace it with real stories from GAI field activities when available."
+    ],
+    "category": "Restoration",
+    "created_at": "2026-11-12T08:12:37.538Z",
+    "date_label": "Placeholder Date",
+    "excerpt": "How agroforestry and erosion control are bringing life back to degraded land while creating new opportunities for farming families.",
+    "image_url": "https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1000&q=80",
+    "published": true,
+    "published_at": null,
+    "title": "Restoring Rwanda's Landscapes, One Hillside at a Time",
+    "updated_at": "2026-11-12T08:12:37.538Z"
+  },
+  {
+    "_id": "6af574f57010aab9bfa1008c",
+    "slug": "climate-resilience-communities",
+    "__v": 0,
+    "alt_text": "Farmer working in a resilient agricultural field",
+    "author": "GAI Communications Team",
+    "body": [
+      "Climate change is not an abstract future threat for farming communities; it shows up in shifting rains, longer dry spells and unpredictable seasons. Adaptation works best when it starts from what communities already know.",
+      "Simple, proven practices — mulching, rainwater harvesting, diversifying crops, planting trees that protect water sources — make farms more resilient without requiring costly inputs.",
+      "When communities experiment together and share results, resilience grows faster than any single farm could achieve alone.",
+      "This is sample article content. Replace it with real stories from GAI field activities when available."
+    ],
+    "category": "Climate Resilience",
+    "created_at": "2026-11-12T08:12:37.540Z",
+    "date_label": "Placeholder Date",
+    "excerpt": "Practical climate adaptation is rooted in local knowledge — communities are leading the way in preparing for a changing climate.",
+    "image_url": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1000&q=80",
+    "published": true,
+    "published_at": null,
+    "title": "Building Climate Resilience with Local Communities",
+    "updated_at": "2026-11-12T08:12:37.540Z"
+  },
+  {
+    "_id": "6af574f57010aab9bfa1008e",
+    "slug": "environmental-education-youth",
+    "__v": 0,
+    "alt_text": "Students engaged in outdoor environmental learning",
+    "author": "GAI Communications Team",
+    "body": [
+      "The most durable environmental lessons happen outside the classroom. When students plant trees, monitor a wetland or start a school garden, abstract ideas become personal commitments.",
+      "School environment clubs give young people a structure to lead: organizing actions, teaching peers and involving their families in what they learn.",
+      "Investing in young environmental stewards is investing in decades of future stewardship.",
+      "This is sample article content. Replace it with real stories from GAI field activities when available."
+    ],
+    "category": "Education",
+    "created_at": "2026-11-12T08:12:37.547Z",
+    "date_label": "Placeholder Date",
+    "excerpt": "Environmental education turns awareness into action when young people learn by doing — in forests, on farms and in their own neighborhoods.",
+    "image_url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80",
+    "published": true,
+    "published_at": null,
+    "title": "Young Stewards: Environmental Education in Practice",
+    "updated_at": "2026-11-12T08:12:37.547Z"
+  },
+  {
+    "_id": "6af574f57010aab9bfa10090",
+    "slug": "indigenous-knowledge-conservation",
+    "__v": 0,
+    "alt_text": "Forest landscape representing traditional ecological knowledge",
+    "author": "GAI Communications Team",
+    "body": [
+      "Long before formal conservation programs, communities developed detailed knowledge of local species, seasons and ecosystems. That knowledge remains one of the most valuable resources for effective environmental protection today.",
+      "Documenting Indigenous and local knowledge — with consent and proper credit — helps science and practice design interventions that fit real places and cultures.",
+      "Conservation that respects local knowledge earns local trust, and trust is what makes protection last.",
+      "This is sample article content. Replace it with real stories from GAI research when available."
+    ],
+    "category": "Research",
+    "created_at": "2026-11-12T08:12:37.552Z",
+    "date_label": "Placeholder Date",
+    "excerpt": "Communities have managed local ecosystems for generations. Documenting and respecting that knowledge strengthens modern conservation.",
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=80",
+    "published": true,
+    "published_at": null,
+    "title": "Indigenous Knowledge: A Foundation for Conservation",
+    "updated_at": "2026-11-12T08:12:37.552Z"
+  },
+  {
+    "_id": "6af574f57010aab9bfa10092",
+    "slug": "community-conservation-in-action",
+    "__v": 0,
+    "alt_text": "Community members managing a conservation area together",
+    "author": "GAI Communications Team",
+    "body": [
+      "The healthiest conservation arrangements are those where communities set the rules for the resources they depend on. Local ownership turns monitoring from policing into pride.",
+      "Supporting committees with training, simple tools and fair processes helps them manage forests, wetlands and grazing areas effectively.",
+      "The result is conservation that endures because it belongs to the people who live closest to the land.",
+      "This is sample article content. Replace it with real stories from GAI field activities when available."
+    ],
+    "category": "Conservation",
+    "created_at": "2026-11-12T08:12:37.557Z",
+    "date_label": "Placeholder Date",
+    "excerpt": "When local communities hold real authority over natural resources, protection becomes a shared project rather than an outside rule.",
+    "image_url": "https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=1000&q=80",
+    "published": true,
+    "published_at": null,
+    "title": "Community Conservation in Action",
+    "updated_at": "2026-11-12T08:12:37.557Z"
+  }
+]

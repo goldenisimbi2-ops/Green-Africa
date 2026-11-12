@@ -1,0 +1,34 @@
+# Dependencies and generated build output
+**/node_modules/
+**/node_modules_old/
+**/dist/
+**/dist-ssr/
+
+# Local secrets and environment configuration
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.production.example
+
+# Local copies and editor/tool metadata
+/GAI-FullStack-Separated/
+/.kilo/
+/.kombai/
+/.qodo/
+**/.kilo/
+**/.kombai/
+**/.qodo/
+**/.vscode/
+**/.idea/
+
+# Local exports and unrelated media/research files
+/WhatsApp Video 2026-09-19 at 17.46.52.mp4
+/GAI-frontend/QR Code Generator_ Turn any link, vCard or file into a QR code.mhtml
+
+# Do not publish local administrator password hashes
+/GAI-backend/backup/admins.json
+
+# Logs and OS metadata
+**/*.log
+**/.DS_Store
+**/Thumbs.db

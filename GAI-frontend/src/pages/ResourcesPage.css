@@ -1,0 +1,58 @@
+.resources-page {
+  background: var(--white);
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.resource-card h3 {
+  font-size: 1.05rem;
+  color: var(--dark-forest);
+  margin-bottom: 8px;
+}
+
+.resource-category {
+  color: var(--bright-green);
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 8px;
+}
+
+.resource-text {
+  color: var(--gray-text);
+  font-size: 0.92rem;
+  flex-grow: 1;
+}
+
+.card-link.disabled {
+  margin-top: 18px;
+  display: inline-block;
+  color: #9CA3AF;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: default;
+}
+
+.section-title code {
+  background: var(--light-green);
+  padding: 1px 6px;
+  border-radius: 5px;
+  font-size: 0.85em;
+}
+
+@media (max-width: 992px) {
+  .resources-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+}

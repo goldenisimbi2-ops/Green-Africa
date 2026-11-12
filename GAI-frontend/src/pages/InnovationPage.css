@@ -1,0 +1,99 @@
+.innovation-page {
+  padding: 80px 0;
+}
+
+.innovation-intro {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.innovation-intro p {
+  font-size: 1.1rem;
+  color: var(--gray-text);
+  line-height: 1.8;
+}
+
+.innovation-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.feature-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px;
+  transition: box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  box-shadow: var(--shadow);
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: var(--dark-forest);
+  color: var(--bright-green);
+  margin-bottom: 24px;
+}
+
+.feature-card h2 {
+  font-size: 1.4rem;
+  color: var(--dark-forest);
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: var(--gray-text);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.innovation-cta {
+  background: linear-gradient(135deg, var(--dark-forest), var(--primary-green));
+  border-radius: var(--radius);
+  padding: 60px;
+  text-align: center;
+  color: var(--white);
+}
+
+.innovation-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+.innovation-cta p {
+  max-width: 600px;
+  margin: 0 auto 32px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .innovation-page {
+    padding: 60px 0;
+  }
+
+  .innovation-features {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .feature-card {
+    padding: 28px;
+  }
+
+  .innovation-cta {
+    padding: 40px 28px;
+  }
+}

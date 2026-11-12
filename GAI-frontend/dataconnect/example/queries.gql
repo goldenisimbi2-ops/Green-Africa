@@ -1,0 +1,99 @@
+mutation CreateUser @auth(level: USER) {
+  user_insert(data: { id_expr: "auth.uid", email: "user@example.com", displayName: "User" })
+}
+
+mutation UpdateUser @auth(level: USER) {
+  user_update(key: { id_expr: "auth.uid" }, data: { displayName: "New Name" })
+}
+
+mutation DeleteUser @auth(level: USER) {
+  user_delete(key: { id_expr: "auth.uid" })
+}
+
+query GetUser @auth(level: USER) {
+  user(key: { id_expr: "auth.uid" }) { email displayName }
+}
+
+query ListUsers @auth(level: PUBLIC, insecureReason: "Publicly visible user directory") {
+  users { email displayName }
+}
+
+mutation CreateProject @auth(level: USER) {
+  project_insert(data: { name: "Project", framework: "React", ownerId_expr: "auth.uid" })
+}
+
+mutation UpdateProject @auth(level: USER) {
+  project_update(id: "00000000-0000-0000-0000-000000000000", data: { description: "Updated" })
+}
+
+mutation DeleteProject @auth(level: USER) {
+  project_delete(id: "00000000-0000-0000-0000-000000000000")
+}
+
+query GetProject @auth(level: PUBLIC, insecureReason: "Projects are public") {
+  project(id: "00000000-0000-0000-0000-000000000000") { name framework }
+}
+
+query ListProjects @auth(level: PUBLIC, insecureReason: "Public project list") {
+  projects { name framework }
+}
+
+mutation CreateDeployment @auth(level: USER) {
+  deployment_insert(data: { buildHash: "abc", status: "success", timestamp: "2024-01-01T00:00:00Z", projectId: "00000000-0000-0000-0000-000000000000" })
+}
+
+mutation UpdateDeployment @auth(level: USER) {
+  deployment_update(id: "00000000-0000-0000-0000-000000000000", data: { status: "deployed" })
+}
+
+mutation DeleteDeployment @auth(level: USER) {
+  deployment_delete(id: "00000000-0000-0000-0000-000000000000")
+}
+
+query GetDeployment @auth(level: PUBLIC, insecureReason: "Public deployments") {
+  deployment(id: "00000000-0000-0000-0000-000000000000") { buildHash status }
+}
+
+query ListDeployments @auth(level: PUBLIC, insecureReason: "Public deployment list") {
+  deployments { buildHash status }
+}
+
+mutation CreateEnvironment @auth(level: USER) {
+  environment_insert(data: { name: "Prod", url: "https://prod.com", projectId: "00000000-0000-0000-0000-000000000000" })
+}
+
+mutation UpdateEnvironment @auth(level: USER) {
+  environment_update(id: "00000000-0000-0000-0000-000000000000", data: { isActive: true })
+}
+
+mutation DeleteEnvironment @auth(level: USER) {
+  environment_delete(id: "00000000-0000-0000-0000-000000000000")
+}
+
+query GetEnvironment @auth(level: PUBLIC, insecureReason: "Public environments") {
+  environment(id: "00000000-0000-0000-0000-000000000000") { name url }
+}
+
+query ListEnvironments @auth(level: PUBLIC, insecureReason: "Public environment list") {
+  environments { name url }
+}
+
+mutation CreateDomain @auth(level: USER) {
+  domain_insert(data: { domainName: "example.com", sslStatus: "active", environmentId: "00000000-0000-0000-0000-000000000000" })
+}
+
+mutation UpdateDomain @auth(level: USER) {
+  domain_update(id: "00000000-0000-0000-0000-000000000000", data: { sslStatus: "verified" })
+}
+
+mutation DeleteDomain @auth(level: USER) {
+  domain_delete(id: "00000000-0000-0000-0000-000000000000")
+}
+
+query GetDomain @auth(level: PUBLIC, insecureReason: "Public domain info") {
+  domain(id: "00000000-0000-0000-0000-000000000000") { domainName sslStatus }
+}
+
+query ListDomains @auth(level: PUBLIC, insecureReason: "Public domain list") {
+  domains { domainName sslStatus }
+}

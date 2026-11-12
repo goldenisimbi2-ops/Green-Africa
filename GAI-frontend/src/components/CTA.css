@@ -1,0 +1,30 @@
+.cta {
+  background:
+    linear-gradient(rgba(20, 83, 45, 0.88), rgba(20, 83, 45, 0.88)),
+    url('https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  text-align: center;
+}
+
+.cta-inner {
+  max-width: 780px;
+}
+
+.cta h2 {
+  color: var(--white);
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.cta p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 32px;
+  font-size: 1.05rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}

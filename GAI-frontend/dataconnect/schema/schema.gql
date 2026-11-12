@@ -1,0 +1,36 @@
+type User @table {
+  email: String!
+  displayName: String!
+  role: String
+}
+
+type Project @table {
+  name: String!
+  framework: String!
+  description: String
+  createdAt: Timestamp
+  owner: User
+}
+
+type Deployment @table {
+  buildHash: String!
+  status: String!
+  timestamp: Timestamp!
+  buildLogUrl: String
+  commitMessage: String
+  project: Project!
+}
+
+type Environment @table {
+  name: String!
+  url: String!
+  isActive: Boolean
+  project: Project!
+}
+
+type Domain @table {
+  domainName: String!
+  sslStatus: String!
+  verificationCode: String
+  environment: Environment!
+}

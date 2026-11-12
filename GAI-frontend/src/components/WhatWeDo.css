@@ -1,0 +1,64 @@
+.whatwedo {
+  background: var(--white);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--light-green);
+  color: var(--primary-green);
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  color: var(--dark-forest);
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: var(--gray-text);
+  font-size: 0.9rem;
+  flex-grow: 1;
+}
+
+.card-link {
+  margin-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--bright-green);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

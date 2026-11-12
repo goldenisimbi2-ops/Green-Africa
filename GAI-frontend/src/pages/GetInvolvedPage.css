@@ -1,0 +1,130 @@
+.involved-page {
+  background: var(--light-green);
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.option-card h3 {
+  font-size: 1.08rem;
+}
+
+.option-card p {
+  font-size: 0.9rem;
+}
+
+.involved-form {
+  margin-top: 70px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 40px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.involved-form h2 {
+  color: var(--dark-forest);
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.involved-form>p {
+  color: var(--gray-text);
+  margin: 8px 0 24px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-field {
+  margin-bottom: 18px;
+}
+
+.form-field label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--dark-forest);
+  margin-bottom: 7px;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--dark-text);
+  background: var(--white);
+  transition: border-color 0.25s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--bright-green);
+}
+
+.form-field [aria-invalid='true'] {
+  border-color: #DC2626;
+}
+
+.field-error {
+  display: block;
+  color: #DC2626;
+  font-size: 0.82rem;
+  margin-top: 5px;
+}
+
+.form-msg {
+  padding: 13px 16px;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  margin-bottom: 20px;
+}
+
+.form-msg.success {
+  background: #ECFDF3;
+  color: #166534;
+  border: 1px solid #A7D7B0;
+}
+
+.form-msg.error {
+  background: #FEF2F2;
+  color: #B91C1C;
+  border: 1px solid #FECACA;
+}
+
+@media (max-width: 992px) {
+  .options-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .involved-form {
+    padding: 24px;
+  }
+}

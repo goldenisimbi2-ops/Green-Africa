@@ -1,0 +1,132 @@
+[
+  {
+    "_id": "6af574f57010aab9bfa10078",
+    "slug": "community-tree-planting",
+    "__v": 0,
+    "activities": [
+      "Community seedling nurseries",
+      "Group planting days on selected sites",
+      "Monitoring of seedling survival and growth"
+    ],
+    "alt_text": "Hands planting a young tree seedling in soil",
+    "category": "Tree Planting",
+    "community": "Local residents take part in planning, planting and long-term care of the trees, with training provided in nursery management and agroforestry practices.",
+    "created_at": "2026-11-12T08:12:37.462Z",
+    "image_url": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=900&q=80",
+    "impact": "Improved ground cover, reduced soil erosion and growing community experience in restoration techniques.",
+    "location": "Gicumbi",
+    "objectives": [
+      "Restore tree cover on degraded hillsides",
+      "Improve soil health and reduce erosion",
+      "Involve local households in planting and care"
+    ],
+    "overview": "Working alongside local communities to plant and nurture native trees on degraded hillsides, improving soil health and restoring local ecosystems. This sample project description can be replaced with official project information.",
+    "status": "Upcoming",
+    "title": "Community Tree Planting Initiative",
+    "updated_at": "2026-11-12T08:12:37.462Z"
+  },
+  {
+    "_id": "6af574f57010aab9bfa1007e",
+    "slug": "landscape-restoration",
+    "__v": 0,
+    "activities": [
+      "Agroforestry demonstrations with farming households",
+      "Soil-erosion control structures on slopes",
+      "Wetland protection awareness campaigns"
+    ],
+    "alt_text": "Rolling green hills of a restored landscape",
+    "category": "Ecosystem Restoration",
+    "community": "Farming families co-design restoration plans for their own plots and communal land, supported by technical training.",
+    "created_at": "2026-11-12T08:12:37.506Z",
+    "image_url": "https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=900&q=80",
+    "impact": "Healthier soils, better water retention and gradually returning biodiversity in treated areas.",
+    "location": "Gicumbi",
+    "objectives": [
+      "Bring degraded land back into productive, healthy use",
+      "Protect wetlands and water sources",
+      "Combine restoration with farmer livelihoods"
+    ],
+    "overview": "An integrated effort to restore degraded landscapes through agroforestry, erosion control and wetland protection, benefiting both people and nature. Placeholder content — replace with official details.",
+    "status": "Upcoming",
+    "title": "Landscape Restoration Program",
+    "updated_at": "2026-11-12T08:12:37.506Z"
+  },
+  {
+    "_id": "6af574f57010aab9bfa10080",
+    "slug": "community-conservation-project",
+    "__v": 0,
+    "activities": [
+      "Community forest management committees",
+      "Energy-efficient cooking solutions",
+      "Nature-friendly income activities"
+    ],
+    "alt_text": "Community members tending a conservation area together",
+    "category": "Community Conservation",
+    "community": "Committees of community members lead decision-making, ensuring conservation rules reflect local realities.",
+    "created_at": "2026-11-12T08:12:37.512Z",
+    "image_url": "https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=900&q=80",
+    "impact": "Reduced deforestation pressure and stronger local governance of shared natural resources.",
+    "location": "Gicumbi",
+    "objectives": [
+      "Strengthen local ownership of natural resources",
+      "Reduce pressure on forests through alternatives",
+      "Build local institutions for resource management"
+    ],
+    "overview": "Supporting communities to manage and protect nearby forests and natural resources while developing sustainable, nature-friendly livelihoods. Placeholder content — replace with official details.",
+    "status": "Upcoming",
+    "title": "Community Conservation Project",
+    "updated_at": "2026-11-12T08:12:37.512Z"
+  },
+  {
+    "_id": "6af574f57010aab9bfa10082",
+    "slug": "climate-resilient-agriculture",
+    "__v": 0,
+    "activities": [
+      "Demonstration plots for climate-smart techniques",
+      "Training on rainwater harvesting and mulching",
+      "Exchange visits between farming groups"
+    ],
+    "alt_text": "Farmer inspecting climate-resilient crops in a field",
+    "category": "Climate Resilience",
+    "community": "Farmer groups select which practices to test, and lead trainers come from within their own communities.",
+    "created_at": "2026-11-12T08:12:37.517Z",
+    "image_url": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=900&q=80",
+    "impact": "More stable harvests and increased confidence in facing variable weather seasons.",
+    "location": "Gicumbi",
+    "objectives": [
+      "Increase resilience of smallholder farming to climate shocks",
+      "Promote water-smart and soil-smart practices",
+      "Share practical knowledge farmer-to-farmer"
+    ],
+    "overview": "Helping farming households adopt climate-smart practices that protect harvests against changing rainfall patterns and extreme weather. Placeholder content — replace with official details.",
+    "status": "Upcoming",
+    "title": "Climate-Resilient Agriculture",
+    "updated_at": "2026-11-12T08:12:37.517Z"
+  },
+  {
+    "_id": "6af574f57010aab9bfa10084",
+    "slug": "youth-environmental-education",
+    "__v": 0,
+    "activities": [
+      "School environment clubs",
+      "Field visits to restoration sites",
+      "Youth-led tree planting and clean-up actions"
+    ],
+    "alt_text": "Young students engaged in an outdoor learning activity",
+    "category": "Environmental Education",
+    "community": "Teachers, parents and local leaders are engaged so that learning continues beyond individual sessions.",
+    "created_at": "2026-11-12T08:12:37.522Z",
+    "image_url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80",
+    "impact": "A growing network of informed young people taking practical action for their environment.",
+    "location": "Gicumbi",
+    "objectives": [
+      "Build environmental literacy among young people",
+      "Connect classroom learning with real ecosystems",
+      "Support youth-led environmental action"
+    ],
+    "overview": "Training young people in schools and community groups on environmental conservation, climate change and hands-on environmental action. Placeholder content — replace with official details.",
+    "status": "Upcoming",
+    "title": "Youth Environmental Education",
+    "updated_at": "2026-11-12T08:12:37.522Z"
+  }
+]

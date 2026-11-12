@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: gai-backend
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRATION_MS
+        value: 86400000
+      - key: CLIENT_ORIGIN
+        sync: false
+      - key: CLIENT_URL
+        sync: false

@@ -1,0 +1,62 @@
+.innovation {
+  background: var(--light-green);
+}
+
+.innovation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.innovation-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.innovation-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: var(--dark-forest);
+  color: var(--bright-green);
+  margin-bottom: 20px;
+}
+
+.innovation-card h3 {
+  font-size: 1.2rem;
+  color: var(--dark-forest);
+  margin-bottom: 10px;
+}
+
+.innovation-card p {
+  color: var(--gray-text);
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+
+.innovation-link {
+  margin-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--primary-green);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.innovation-link:hover {
+  color: var(--dark-forest);
+}
+
+@media (max-width: 768px) {
+  .innovation-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,27 @@
+mutation SeedDatabase @transaction {
+  user_insertMany(data: [
+    { id: "550e8400-e29b-41d4-a716-446655440001", email: "alice@example.com", displayName: "Alice" },
+    { id: "550e8400-e29b-41d4-a716-446655440002", email: "bob@example.com", displayName: "Bob" },
+    { id: "550e8400-e29b-41d4-a716-446655440003", email: "charlie@example.com", displayName: "Charlie" }
+  ])
+  project_insertMany(data: [
+    { id: "10000000-0000-0000-0000-000000000001", name: "Alpha", framework: "React", ownerId: "550e8400-e29b-41d4-a716-446655440001" },
+    { id: "10000000-0000-0000-0000-000000000002", name: "Beta", framework: "Next.js", ownerId: "550e8400-e29b-41d4-a716-446655440002" },
+    { id: "10000000-0000-0000-0000-000000000003", name: "Gamma", framework: "Vue", ownerId: "550e8400-e29b-41d4-a716-446655440003" }
+  ])
+  environment_insertMany(data: [
+    { id: "20000000-0000-0000-0000-000000000001", name: "Prod", url: "https://prod.alpha.com", projectId: "10000000-0000-0000-0000-000000000001" },
+    { id: "20000000-0000-0000-0000-000000000002", name: "Staging", url: "https://staging.beta.com", projectId: "10000000-0000-0000-0000-000000000002" },
+    { id: "20000000-0000-0000-0000-000000000003", name: "Dev", url: "https://dev.gamma.com", projectId: "10000000-0000-0000-0000-000000000003" }
+  ])
+  domain_insertMany(data: [
+    { id: "30000000-0000-0000-0000-000000000001", domainName: "alpha.com", sslStatus: "ACTIVE", environmentId: "20000000-0000-0000-0000-000000000001" },
+    { id: "30000000-0000-0000-0000-000000000002", domainName: "beta.app", sslStatus: "PENDING", environmentId: "20000000-0000-0000-0000-000000000002" },
+    { id: "30000000-0000-0000-0000-000000000003", domainName: "gamma.dev", sslStatus: "ACTIVE", environmentId: "20000000-0000-0000-0000-000000000003" }
+  ])
+  deployment_insertMany(data: [
+    { id: "40000000-0000-0000-0000-000000000001", buildHash: "a1b2c3d4", status: "SUCCESS", timestamp: "2023-10-01T12:00:00Z", projectId: "10000000-0000-0000-0000-000000000001" },
+    { id: "40000000-0000-0000-0000-000000000002", buildHash: "e5f6g7h8", status: "FAILED", timestamp: "2023-10-02T12:00:00Z", projectId: "10000000-0000-0000-0000-000000000002" },
+    { id: "40000000-0000-0000-0000-000000000003", buildHash: "i9j0k1l2", status: "SUCCESS", timestamp: "2023-10-03T12:00:00Z", projectId: "10000000-0000-0000-0000-000000000003" }
+  ])
+}
