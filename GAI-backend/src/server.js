@@ -22,10 +22,21 @@ if (!process.env.JWT_SECRET || process.env.JWT_SECRET === "change_this_to_a_long
 app.set("trust proxy", 1);
 app.disable("x-powered-by");
 
+const allowedOrigins = new Set(
+  [process.env.CLIENT_ORIGIN, process.env.CLIENT_URL, "https://green-africa-omega.vercel.app"]
+    .filter(Boolean)
+    .flatMap((value) => value.split(","))
+    .map((origin) => origin.trim())
+    .filter(Boolean)
+);
+
 app.use(helmet());
 app.use(
   cors({
-    origin: process.env.CLIENT_ORIGIN?.split(",").map((x) => x.trim()) || process.env.CLIENT_URL?.split(",").map((x) => x.trim()) || "*",
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.has(origin)) return callback(null, true);
+      return callback(new Error("Origin is not allowed by CORS."));
+    },
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   })
 );
