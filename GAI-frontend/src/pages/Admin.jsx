@@ -1,6 +1,8 @@
 ﻿import { useEffect, useState } from 'react';
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API = import.meta.env.DEV
+  ? (import.meta.env.VITE_API_URL || 'http://localhost:5000/api')
+  : '/api';
 
 async function call(path, opts = {}) {
   const token = localStorage.getItem('gai_token');
