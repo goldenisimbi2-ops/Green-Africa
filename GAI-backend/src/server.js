@@ -1,5 +1,4 @@
 ﻿import express from "express";
-import cors from "cors";
 import helmet from "helmet";
 import rateLimit from "express-rate-limit";
 import dotenv from "dotenv";
@@ -22,24 +21,43 @@ if (!process.env.JWT_SECRET || process.env.JWT_SECRET === "change_this_to_a_long
 app.set("trust proxy", 1);
 app.disable("x-powered-by");
 
+const normalizeOrigin = (value) => {
+  try {
+    return new URL(value).origin;
+  } catch {
+    return null;
+  }
+};
+
 const allowedOrigins = new Set(
   [process.env.CLIENT_ORIGIN, process.env.CLIENT_URL, "https://green-africa-omega.vercel.app"]
     .filter(Boolean)
     .flatMap((value) => value.split(","))
-    .map((origin) => origin.trim())
+    .map((origin) => normalizeOrigin(origin.trim()))
     .filter(Boolean)
 );
 
 app.use(helmet());
-app.use(
-  cors({
-    origin: (origin, callback) => {
-      if (!origin || allowedOrigins.has(origin)) return callback(null, true);
-      return callback(new Error("Origin is not allowed by CORS."));
-    },
-    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-  })
-);
+app.use((req, res, next) => {
+  const origin = req.get("Origin");
+  const normalizedOrigin = origin ? normalizeOrigin(origin) : null;
+
+  if (normalizedOrigin && allowedOrigins.has(normalizedOrigin)) {
+    res.setHeader("Access-Control-Allow-Origin", normalizedOrigin);
+    res.vary("Origin");
+
+    if (req.method === "OPTIONS") {
+      res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE, OPTIONS");
+      res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+      res.setHeader("Access-Control-Max-Age", "86400");
+      return res.sendStatus(204);
+    }
+  } else if (req.method === "OPTIONS") {
+    return res.sendStatus(403);
+  }
+
+  next();
+});
 app.use(express.json({ limit: "2mb" }));
 app.use(express.urlencoded({ extended: true, limit: "2mb" }));
 app.use(rateLimit({ windowMs: 15 * 60 * 1000, max: 300 }));
