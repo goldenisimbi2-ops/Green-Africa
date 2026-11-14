@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://agriculture-livid-eight.vercel.app/sitemap.xml
+Sitemap: https://green-africa-omega.vercel.app/sitemap.xml
